@@ -1,0 +1,133 @@
+body{
+    background-image: url('WhatsApp\ Image\ 2023-10-08\ at\ 13.10.00_e0002b8c.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 800px;
+    height: 800px;
+    background-color:white;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+#title{
+    font-size: 2rem;
+    color: aliceblue;
+}
+#quotes{
+    font-size: 4rem;
+    position: absolute;
+    bottom: 150px;
+    color: aliceblue;
+}
+.search-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    top: 373px;
+}
+
+.search-input {
+    padding: 10px;
+    font-size: 16px;
+    width: 420px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    position: absolute;
+    right: 34px;
+}
+
+.search-button {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 20px;
+}
+.h1{
+    color: black;
+    position: absolute;
+    top: 1300px;
+    font-size: 1.5rem;
+}
+.gird {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px;
+    padding: 20px;
+    position: absolute;
+    top: 1400px;
+    
+}
+.container {
+    border: 0px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    transition: box-shadow 0.3 ease;
+}
+.container:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.container img {
+    max-width: 150%;
+    height: auto;
+    margin-bottom: 10px;
+}
+.h2{
+    color: black;
+    position: absolute;
+    top: 800px;
+    font-size: 1.5rem;
+}
+.Chef{
+    position: relative;
+    top: 250px;
+    left: 410px;
+}
+#mealContainer img {
+    width: 250px;
+    height: auto;
+    position: relative;
+    top: 20px;
+    left: 710px;
+}
+#mealContainer p {
+    font-size: 24px; 
+    position: relative;
+    left: 710px;
+}
+.below{
+    background-color: #FACC88;
+    width: 1400px;
+    height: 500px;
+    position: relative;
+    top: 950px;
+}
+.below h2 {
+    position: relative;
+    top: 5px;
+    padding: 20px;
+}
+.below h1 {
+    position: relative;
+    top: 0px;
+    bottom: 0px;
+    font-size: 3rem;
+    padding: 20px;
+}
+.below h3 {
+    position: relative;
+    padding: 20px;
+    font-size: 2rem;
+    font-weight: lighter;
+}
+.below img {
+    width: 710px;
+    height: 500px;
+    bottom: 500px;
+    position: relative;
+    left: 635px;
+}
