@@ -1,3 +1,4 @@
+/* body */
 body{
     background-image: url('WhatsApp\ Image\ 2023-10-08\ at\ 13.10.00_e0002b8c.jpg');
     background-repeat: no-repeat;
@@ -7,17 +8,21 @@ body{
     background-color:white;
     overflow: scroll;
     overflow-x: hidden;
+    overflow-y:calc('1000px') ;
 }
+/* title for the page  */
 #title{
     font-size: 2rem;
     color: aliceblue;
 }
+/* quote for the website  */
 #quotes{
     font-size: 4rem;
     position: absolute;
     bottom: 150px;
     color: aliceblue;
 }
+/* search box  */
 .search-box {
     position: relative;
     display: flex;
@@ -47,12 +52,14 @@ body{
     cursor: pointer;
     font-size: 20px;
 }
+/* heading for dish  */
 .h1{
     color: black;
     position: absolute;
     top: 1300px;
     font-size: 1.5rem;
 }
+/* using grid display the food */
 .gird {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -62,20 +69,40 @@ body{
     top: 1400px;
     
 }
+/* box */
 .container {
     border: 0px solid #ddd;
     padding: 20px;
     text-align: center;
-    transition: box-shadow 0.3 ease;
+    transition: box-shadow 0.3 ease-in-out;
 }
 .container:hover {
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
+    transform: scale(1.1);
 }
 .container img {
     max-width: 150%;
     height: auto;
     margin-bottom: 10px;
 }
+/*  style the image when we search  */
+.container1 {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.container1:hover {
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
+    transform: scale(1.1);
+}
+/* remove the anchor tag of blue line  */
+a {
+    color: inherit; 
+    text-decoration: none;
+}
+/* chef choice  */
 .h2{
     color: black;
     position: absolute;
@@ -87,6 +114,7 @@ body{
     top: 250px;
     left: 410px;
 }
+/* chef image  */
 #mealContainer img {
     width: 250px;
     height: auto;
@@ -99,6 +127,8 @@ body{
     position: relative;
     left: 710px;
 }
+
+/* lab of the website  */
 .below{
     background-color: #FACC88;
     width: 1400px;
@@ -124,6 +154,7 @@ body{
     font-size: 2rem;
     font-weight: lighter;
 }
+/* gif of the website  */
 .below img {
     width: 710px;
     height: 500px;
@@ -131,3 +162,36 @@ body{
     position: relative;
     left: 635px;
 }
+/* footer of the website  */
+.down{
+    background-color: #ccc;
+    position: relative;
+    top: 950px;
+    width: 1400px;
+    height: 130px;
+    padding: 10px; 
+    text-align: center;
+    margin-top: 0;
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px; 
+}
+
+.logo {
+    max-height: 67px;
+    border-radius: 30%;
+    overflow: hidden;
+    position: absolute;
+    right: 1290px;
+    bottom:  30px;
+}
+.name {
+    margin: 0;
+    left: 1000px;
+    position: relative;
+    top: 110px;
+}
+
