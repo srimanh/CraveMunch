@@ -7,6 +7,8 @@
 
 body {
     font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 /* Sperate the image part and ingridement part */
 .container {
@@ -15,11 +17,9 @@ body {
     align-items: center;
     margin: 20px;
 }
-
 .left {
     flex: 1;
 }
-
 .right {
     flex: 2;
     margin-left: 20px;
@@ -35,8 +35,8 @@ a{
 }
 
 #leftContainer img {
-    max-width: 350px; 
-    height: 350px;
+    max-width: 300px; 
+    height: 300px;
     display: block;
     transition: transform 0.3s ease-in-out; 
 }
@@ -62,7 +62,7 @@ a{
 /* Style for the ingredients */
 #rightContainer h3 {
     font-size: 1.3rem;
-    color: #555;
+    color: #000000;
     margin-top: 15px;
 }
 
@@ -73,17 +73,19 @@ a{
 
 #rightContainer ol li {
     font-size: 1rem;
-    color: #777;
+    color: #000000;
     margin-bottom: 5px;
 }
 
 /* Style for the instructions (p) */
 #rightContainer p {
-    font-size: 1.2rem;
-    color: #333;
+    font-size: 1.5rem;
+    color: #000000;
     margin-top: 15px;
+    margin-bottom: 35px;
     text-align: center;
 }
+/* footer */
 .down{
     background-color: #ccc;
     position: relative;
@@ -92,7 +94,7 @@ a{
     height: 130px;
     padding: 10px; 
     text-align: center;
-    margin-top: 0;
+    margin-top: 20px;
 }
 .content {
     display: flex;
@@ -111,8 +113,72 @@ a{
 }
 .name {
     margin: 0;
-    left: 1000px;
+    left: 500px;
     position: relative;
     top: 85px;
 }
 
+@media only screen and (max-width: 760px){
+    #leftContainer img {
+        max-width: 125px; 
+        height: 125px;
+        position: absolute;
+        top: -200px;
+        display: block;
+        transition: transform 0.3s ease-in-out; 
+    }
+    #rightContainer h2 {
+        font-size: 1rem;
+        color: #000000;
+        text-align: center;
+    }
+    #rightContainer h3 {
+        font-size: 1.5rem;
+        color: #000000;
+        margin-top: 15px;
+    }
+    #rightContainer ol li {
+        font-size: 0.75rem;
+        color: #777;
+        margin-bottom: 5px;
+    }
+    #rightContainer p {
+        font-size: 0.75rem;
+        color: #000000;
+        margin-top: 15px;
+        text-align: center;
+    }
+    .down{
+        background-color: #ccc;
+        position: relative;
+        top: 100px;
+        width: 800px;
+        height: 100px;
+        padding: 10px; 
+        text-align: center;
+        margin-top: 0;
+    }
+    .content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 800px; 
+    }
+    
+    .logo {
+        max-height: 30px;
+        border-radius: 30%;
+        overflow: hidden;
+        position: absolute;
+        right: 690px;
+        bottom:  50px;
+    }
+    .name {
+        margin: 0;
+        left: -320px;
+        position: relative;
+        top: 30px;
+        font-size: 1rem;
+    }
+    
+}

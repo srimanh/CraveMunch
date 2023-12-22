@@ -1,3 +1,4 @@
+// instruction page for search image 
 document.addEventListener('DOMContentLoaded', function () {
     const leftContainer = document.getElementById('leftContainer');
     const rightContainer = document.getElementById('rightContainer');

@@ -1,0 +1,101 @@
+/* body */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+#instructionsContainer {
+    text-align: center;
+    margin-top: 0px;
+}
+/* chef choice dish */
+#mealImage {
+    width: 300px;
+    height: 300px;
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+/* hover of the image  */
+#mealImage:hover {
+    transform: scale(1.2);
+}
+
+#instructions {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+/* footer */
+.down{
+    background-color: #ccc;
+    position: relative;
+    top: 120px;
+    width: 1400px;
+    height: 130px;
+    padding: 10px; 
+    text-align: center;
+    margin-top: 20px;
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px; 
+}
+
+.logo {
+    max-height: 67px;
+    border-radius: 30%;
+    overflow: hidden;
+    position: absolute;
+    right: 1290px;
+    bottom:  30px;
+}
+.name {
+    margin: 0;
+    left: 500px;
+    position: relative;
+    top: 85px;
+}
+
+/* responsive design  */
+@media only screen and (max-width: 760px) {
+    #mealImage {
+        width: 200px;
+        height: 200px;
+        max-width: 100%;
+        height: auto;
+        transition: transform 0.3s ease-in-out;
+    }
+    .down{
+        background-color: #ccc;
+        position: relative;
+        top: 50px;
+        width: 800px;
+        height: 100px;
+        padding: 10px; 
+        text-align: center;
+        margin-top: 0;
+    }
+    .content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 800px; 
+    }
+    
+    .logo {
+        max-height: 50px;
+        border-radius: 30%;
+        overflow: hidden;
+        position: absolute;
+        right: 690px;
+        bottom:  50px;
+    }
+    .name {
+        margin: 0;
+        left: -360px;
+        position: relative;
+        top: 80px;
+        font-size: 1rem;
+    }
+}

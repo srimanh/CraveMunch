@@ -1,4 +1,4 @@
-// random meal
+// randon food suggestby chef 
 function fetchAndDisplayRandomMeal() {
     fetch('https://www.themealdb.com/api/json/v1/1/random.php')
         .then(response => response.json())
@@ -6,6 +6,13 @@ function fetchAndDisplayRandomMeal() {
             const randomMealImage = data.meals[0].strMealThumb;
             const randomMealName = data.meals[0].strMeal;
             updateMealImage(randomMealImage, randomMealName);
+            // Pass meal data to the showInstructions function
+            const mealData = {
+                id: data.meals[0].idMeal,
+                image: randomMealImage,
+                name: randomMealName
+            };
+            document.getElementById('mealContainer').setAttribute('data-meal', JSON.stringify(mealData));
         })
         .catch(error => console.error('Error fetching random meal:', error));
 }
@@ -21,8 +28,19 @@ function updateMealImage(imageUrl, mealName) {
     mealContainerName.textContent = mealName;
 }
 
+// Function to show instructions on another page
+function showInstructions() {
+    const mealDataString = document.getElementById('mealContainer').getAttribute('data-meal');
+    if (mealDataString) {
+        const mealData = JSON.parse(mealDataString);
+        // Redirect to another page with the meal data
+        window.location.href = `instructions.html?mealId=${mealData.id}&mealImage=${encodeURIComponent(mealData.image)}&mealName=${encodeURIComponent(mealData.name)}`;
+    }
+}
+
 // Fetch and display a random meal when the page loads
 fetchAndDisplayRandomMeal();
+
 // link the api for search
 document.addEventListener('DOMContentLoaded', function () {
     const foodGrid = document.getElementById('foodGrid');

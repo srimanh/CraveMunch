@@ -8,7 +8,7 @@ body{
     background-color:white;
     overflow: scroll;
     overflow-x: hidden;
-    overflow-y:calc('1000px') ;
+    font-family: 'Arial', sans-serif;
 }
 /* title for the page  */
 #title{
@@ -134,7 +134,7 @@ a {
     width: 1400px;
     height: 500px;
     position: relative;
-    top: 950px;
+    top: 790px;
 }
 .below h2 {
     position: relative;
@@ -166,12 +166,14 @@ a {
 .down{
     background-color: #ccc;
     position: relative;
-    top: 950px;
+    top: 790px;
     width: 1400px;
     height: 130px;
     padding: 10px; 
     text-align: center;
     margin-top: 0;
+    /* position: fixed; */
+    bottom: 0;
 }
 .content {
     display: flex;
@@ -190,8 +192,158 @@ a {
 }
 .name {
     margin: 0;
-    left: 1000px;
+    left: 500px;
     position: relative;
     top: 110px;
 }
+.thanks{
+    position: absolute;
+    top: 2850px;
+    font-size: 1.5rem;
+    text-align: center;
+}
 
+@media only screen and (max-width: 760px) {
+    body {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Adjustments for smaller screens */
+    #title {
+        font-size: 1.5rem;
+    }
+
+    #quotes {
+        font-size: 25px;
+        top: 45px; 
+        color: #ffffff;
+    }
+
+    .search-input {
+        width: 80%;
+        position: relative;
+        bottom:  450px;
+        right: 10px;
+    }
+
+    .search-button {
+        right: 50px;
+        position: absolute;
+        top:  -148px;
+        
+    }
+
+    .h1 {
+        font-size: 1rem;
+        top: 350px;
+    }
+    .Chef{
+        position: relative;
+        top: -260px;
+        left: 10px;
+        width: 50px; 
+    }
+    /* chef image  */
+    #mealContainer img {
+        width: 150px;
+        height: auto;
+        position: relative;
+        top: -480px;
+        left: 290px;
+    }
+    #mealContainer p {
+        font-size: 24px; 
+        position: relative;
+        left: 290px;
+        top: -500px;
+    }
+    .h2{
+        color: black;
+        position: absolute;
+        top: 720px;
+        font-size: 1rem;
+    }
+    
+
+    .gird {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 10px;
+        top: 820px; 
+        grid-gap: 50px;
+        left: 55px;
+    }
+    .below{
+        background-color: #FACC88;
+        width: 800px;
+        height: 225px;
+        position: relative;
+        top: 950px;
+    }
+    .below h2 {
+        position: relative;
+        top: 5px;
+        padding: 20px;
+        font-size: 1rem;
+    }
+    .below h1 {
+        position: relative;
+        top: -10px;
+        bottom: 0px;
+        font-size: 1rem;
+        padding: 20px;
+    }
+    .below h3 {
+        position: relative;
+        padding: 20px;
+        font-size: 0.75rem;
+        font-weight: lighter;
+        top: -30px;
+    }
+    /* gif of the website  */
+    .below img {
+        width: 470px;
+        height: 225px;
+        bottom: 268px;
+        position: relative;
+        left: 175px;
+    }
+    .down{
+        background-color: #ccc;
+        position: relative;
+        top: 950px;
+        width: 800px;
+        height: 100px;
+        padding: 10px; 
+        text-align: center;
+        margin-top: 0;
+    }
+    .content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 800px; 
+    }
+    
+    .logo {
+        max-height: 50px;
+        border-radius: 30%;
+        overflow: hidden;
+        position: absolute;
+        right: 690px;
+        bottom:  50px;
+    }
+    .name {
+        margin: 0;
+        left: -360px;
+        position: relative;
+        top: 80px;
+        font-size: 1rem;
+    }
+    .thanks{
+        position: absolute;
+        top: 2450px;
+        font-size: 0.65rem;
+        text-align: center;
+    }
+}
